@@ -39,7 +39,7 @@ Now, based on your chosen OS and compiler:
    * FreeBSD 11: `sudo pkg install gmake sdl2`
 2. Open a terminal, change into the source code directory, and compile the engine and
    test game with: `make` or `gmake` (BSD)
-3. Assuming that was successful, run the test game with: `(cd kenbuild-data; ../game)`
+3. Assuming that was successful, run the test game with: `./kenbuild-data/game`
 
 ### macOS
 
@@ -63,7 +63,7 @@ Now, based on your chosen OS and compiler:
    or _VS2015 x86 Native Tools Command Prompt_.
 3. Change into the JFBuild source code folder, then compile the engine and test game
    with: `nmake /f Makefile.msvc`
-5. Assuming success, run the test game with: `cd kenbuild-data & ..\game`
+5. Assuming success, run the test game with: `kenbuild-data\game`
 
 Compilation options
 -------------------
@@ -79,8 +79,8 @@ These options are available:
  * `USE_POLYMOST=1` – enable the true 3D renderer.
  * `USE_POLYMOST=0` – disable the true 3D renderer.
  * `USE_OPENGL=1` – enable use of OpenGL 2.0 acceleration.
- * `USE_OPENGL=USE_GL2` – enable use of OpenGL 2.0 acceleration.
- * `USE_OPENGL=USE_GLES2` – enable use of OpenGL ES 2.0 acceleration.
+ * `USE_OPENGL=USE_GL2` – enable use of OpenGL 2.0 acceleration. (GCC/clang syntax.)
+ * `USE_OPENGL=USE_GLES2` – enable use of OpenGL ES 2.0 acceleration. (GCC/clang syntax.)
  * `USE_OPENGL=0` – disable use of OpenGL acceleration.
 
 Test game configuration
